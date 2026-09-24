@@ -79,34 +79,10 @@ Cliente (Navegador / Postman)
 │
 └── H2 Database
 ```
----
-
-
-**Capas del proyecto:**
-- **Model** → entidad `Estudiante` mapeada con JPA.
-- **Repository** → `EstudianteRepository` extendiendo `JpaRepository`.
-- **Service** → `EstudianteService` con la lógica de negocio.
-- **Controller** → controladores MVC (vistas) y REST (JSON).
-- **Config** → `SecurityConfig` con reglas de autorización y usuarios.
-- **View** → plantillas Thymeleaf con fragmentos reutilizables.
 
 ---
 
 ## 5. Estructura del proyecto
-
-
-**Capas del proyecto:**
-- **Model** → entidad `Estudiante` mapeada con JPA.
-- **Repository** → `EstudianteRepository` extendiendo `JpaRepository`.
-- **Service** → `EstudianteService` con la lógica de negocio.
-- **Controller** → controladores MVC (vistas) y REST (JSON).
-- **Config** → `SecurityConfig` con reglas de autorización y usuarios.
-- **View** → plantillas Thymeleaf con fragmentos reutilizables.
-
----
-
-## 5. Estructura del proyecto
-
 
 **Capas del proyecto:**
 - **Model** → entidad `Estudiante` mapeada con JPA.
@@ -164,7 +140,7 @@ mvn clean package
 mvn spring-boot:run
 ```
 ---
-
+```
 Accesos
 Recurso	URL
 Aplicación	http://localhost:8080
@@ -184,7 +160,7 @@ JDBC URL: jdbc:h2:mem:springedu
 Usuario: sa
 
 Contraseña: (vacía)
-
+```
 ---
 
 7. Endpoints de la API REST
