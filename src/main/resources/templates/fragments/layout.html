@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<body>
+
+<!-- ========== SIDEBAR ========== -->
+<aside th:fragment="sidebar" class="sidebar">
+    <div class="sidebar-brand">
+        <div class="sidebar-brand-icon">
+            <i class="bi bi-layers-fill"></i>
+        </div>
+        SpringEduManager
+    </div>
+
+    <nav class="sidebar-nav">
+        <a href="/" class="nav-item">
+            <i class="bi bi-house"></i> Inicio
+        </a>
+        <a th:href="@{/estudiantes}" class="nav-item active">
+            <i class="bi bi-people"></i> Estudiantes
+        </a>
+        <a href="#" class="nav-item">
+            <i class="bi bi-book"></i> Cursos
+        </a>
+        <a href="#" class="nav-item">
+            <i class="bi bi-code-slash"></i> Prácticas
+        </a>
+        <a href="#" class="nav-item">
+            <i class="bi bi-calendar-check"></i> Evaluaciones
+        </a>
+        <a href="#" class="nav-item">
+            <i class="bi bi-folder"></i> Recursos
+        </a>
+    </nav>
+
+    <div class="sidebar-footer">
+        <div class="sidebar-footer-icon">
+            <i class="bi bi-bank"></i>
+        </div>
+        <div>
+            Conectado con<br>el campus
+        </div>
+    </div>
+</aside>
+
+<!-- ========== TOPBAR ========== -->
+<header th:fragment="topbar" class="topbar">
+    <div class="topbar-search">
+        <i class="bi bi-search"></i>
+        <input type="text" placeholder="Buscar estudiantes..."/>
+    </div>
+
+    <div class="topbar-actions">
+        <button class="topbar-icon-btn">
+            <i class="bi bi-bell"></i>
+        </button>
+        <div class="topbar-avatar">
+            <div class="topbar-avatar-circle">
+                <i class="bi bi-person"></i>
+            </div>
+            <span th:text="${#authentication.name}">usuario</span>
+        </div>
+        <form th:action="@{/logout}" method="post" style="margin:0;">
+            <button type="submit" class="topbar-icon-btn" title="Cerrar sesión">
+                <i class="bi bi-box-arrow-right"></i>
+            </button>
+        </form>
+    </div>
+</header>
+
+<!-- ========== INFO PANEL INFERIOR ========== -->
+<div th:fragment="infoPanel" class="info-panel">
+    <div class="info-item">
+        <div class="info-item-icon">
+            <i class="bi bi-code-slash"></i>
+        </div>
+        <div>
+            <h5>Cursos · Prácticas · Evaluaciones</h5>
+            <p>Todo en un solo lugar.</p>
+        </div>
+    </div>
+    <div class="info-item">
+        <div class="info-item-icon">
+            <i class="bi bi-bank"></i>
+        </div>
+        <div>
+            <h5>Conectado con el campus</h5>
+            <p>Integración con otros sistemas.</p>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

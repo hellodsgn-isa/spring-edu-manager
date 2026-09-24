@@ -1,0 +1,7 @@
+springedumanager/
+├── docs/
+│   ├── DOCUMENTACION.md
+│   └── screenshots/
+├── README.md
+├── pom.xml
+└── src/
