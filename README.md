@@ -44,3 +44,14 @@ mvn spring-boot:run
 Luego abre: http://localhost:8080
 
 ```
+
+## Capturas
+---
+![Pantalla de Login](img/img1.png)
+---
+![Lista de estudiantes](img/img2.png)
+---
+![Nuevo estudiante](img/img3.png)
+---
+![Base de datos](img/img4.png)
+---
