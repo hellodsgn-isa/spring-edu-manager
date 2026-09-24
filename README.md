@@ -32,7 +32,7 @@ La Coordinación Académica de un bootcamp necesitaba centralizar la informació
 
 ```
 # Clonar el repositorio
-git clone https://github.com/TU-USUARIO/spring-edu-manager.git
+git clone https://github.com/hellodsgn-isa/spring-edu-manager.git
 cd spring-edu-manager
 
 # Ejecutar la aplicación
@@ -44,14 +44,12 @@ mvn spring-boot:run
 Luego abre: http://localhost:8080
 
 ```
-
 ## Capturas
----
+
 ![Pantalla de Login](img/img1.png)
----
+
 ![Lista de estudiantes](img/img2.png)
----
+
 ![Nuevo estudiante](img/img3.png)
----
+
 ![Base de datos](img/img4.png)
----
