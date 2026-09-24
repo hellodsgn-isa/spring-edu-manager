@@ -32,7 +32,7 @@ La Coordinación Académica de un bootcamp necesitaba centralizar la informació
 
 ```
 # Clonar el repositorio
-git clone https://github.com/TU-USUARIO/spring-edu-manager.git
+git clone https://github.com/hellodsgn-isa/spring-edu-manager.git
 cd spring-edu-manager
 
 # Ejecutar la aplicación
