@@ -66,7 +66,7 @@ La Coordinación Académica de un bootcamp de programación necesitaba una plata
 El proyecto sigue el patrón **MVC** con arquitectura por capas:
 
 ---
-
+```
 Cliente (Navegador / Postman)
 │
 ├── Controllers (MVC + REST)
@@ -78,7 +78,7 @@ Cliente (Navegador / Postman)
 ├── Entity (modelo)
 │
 └── H2 Database
-
+```
 ---
 
 
